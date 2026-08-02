@@ -80,10 +80,3 @@ for i in range(len(images_test)):
 
 accuracy = correct/len(images_test)
 
-L = pred((images_test[10]),W1,W2,b1,b2)
-print(np.where(L == L.max())[0].item())
-
-
-plt.imshow(images_test[10].reshape(8, 8), cmap='gray')
-plt.title(f"Label: {number_test[10]}")
-plt.show()
