@@ -42,3 +42,5 @@ The implemented network contains:
 |       0 - 9           |
 +-----------------------+
 ```
+##Evaluation:
+Accuracy ~ 95.8%
