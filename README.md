@@ -18,16 +18,27 @@ The neural network learns the relationship between pixel values and digit labels
 ## Neural Network Architecture
 
 The implemented network contains:
-Input layer
-|
-| 64 features (8x8 image)
-|
-Hidden layer
-|
-| 16 neurons + ReLU activation
-|
-Output layer
-|
-| 10 neurons + Softmax activation
-|
-Prediction (digit 0-9)
+```text
++-----------------------+
+|      Input Layer      |
+|    64 pixels (8x8)    |
++-----------------------+
+            |
+            v
++-----------------------+
+|    Hidden Layer       |
+|  16 neurons + ReLU    |
++-----------------------+
+            |
+            v
++-----------------------+
+|     Output Layer      |
+| 10 neurons + Softmax  |
++-----------------------+
+            |
+            v
++-----------------------+
+|  Predicted digit      |
+|       0 - 9           |
++-----------------------+
+```
